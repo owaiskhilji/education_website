@@ -61,7 +61,7 @@ function openModal(){
             </li>
             <li className="hover:bg-[#1A4D2E] ">
                <Link
-              to="/about"
+              to="/contact"
               onClick={() => document.activeElement.blur()}
               >Contact us</Link>
             </li>
