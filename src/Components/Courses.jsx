@@ -36,18 +36,15 @@ const Courses = () => {
     }, []);
   
   return (
-    <div className="w-full px-4 md:pt-20 md:pb-16">
+    <div className="w-full mt-4 px-4 md:pt-16 md:pb-16">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-2">
         <div className="flex flex-col gap-4 px-8">
-          <h3 className="text-xl sm:text-3xl md:text-4xl lg:text-4xl font-bold tracking-light text-gray-600 capitalize font-serif">
+          <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold tracking-light text-gray-600 capitalize font-serif">
           Our Popular Courses
           </h3>
-          <h2 className="text-md sm:text-2xl md:text-3xl font-semibold text-gray-600 tracking-tighter font-serif">
-            
-          </h2>
         </div>
         <div className="flex flex-col gap-4 px-8">
-          <p className="text-lg tracking-normal text-gray-500">
+          <p className="text-sm sm:text-lg md:text-lg lg:text-lg tracking-normal text-gray-500">
           Learn the most in-demand Islamic courses including <span className="text-hovertextcolor">Basic Qaida</span> , <span className="text-hovertextcolor">Tajweed</span>, and<span className="text-hovertextcolor"> Tafseer</span>, carefully designed to guide learners of all levels.
           <span className="text-md text-hovertextcolor underline cursor-pointer"> see all</span>
           </p>
@@ -62,8 +59,8 @@ const Courses = () => {
           >
             <div className="flex items-center justify-center flex-col gap-4">
               <div className=" flex flex-col gap-2">
-                <h4 className="text-2xl font-semibold text-hovertextcolor">{step.title}</h4>
-                <p className="text-md text-gray-700">{step.description}</p>
+                <h4 className="text-xl sm:text-xl md:text-2xl lg:text-2xl font-semibold text-hovertextcolor">{step.title}</h4>
+                <p className="text-sm sm:text-md md:text-md lg:text-md text-gray-700">{step.description}</p>
               </div>
             </div>
           </div>
