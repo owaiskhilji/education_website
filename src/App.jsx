@@ -1,14 +1,10 @@
 import { useEffect} from "react";
 import './App.css'
 import {Routes,Route,useLocation } from "react-router-dom";
-import Home from "./Pages/Home"
-import Contact from "./Pages/Contact"
-import Aboutus from "./Pages/Aboutus"
+import Home from "./Pages/Hero/Home"
 import Notfound from "./Pages/Notfound"
-import Allcourses from "./Pages/Allcourses"
-import WhatsAppButton from "./Components/WhatsAppButton"
-import Navbar from "./Components/Navbar"
-import Footer from "./Components/Footer"
+import Navbar from "./Components/Main/Navbar"
+import Footer from "./Components/Main/Footer"
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -31,9 +27,9 @@ function App() {
     <ScrollToTop/>
 <Routes>
 <Route path="/" element={<Home/>} />
-<Route path="/about" element={< Aboutus/>} />
+{/* <Route path="/about" element={< Aboutus/>} />
 <Route path="/allcourses" element={< Allcourses/>} />
-<Route path="/contact" element={< Contact/>} />
+<Route path="/contact" element={< Contact/>} /> */}
 <Route path="/*" element={< Notfound/>} />
 </Routes>
 <WhatsAppButton/>
